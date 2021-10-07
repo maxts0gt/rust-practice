@@ -12,4 +12,17 @@
 // * Use a match expression to determine which message
 //   to print
 
-fn main() {}
+fn main() {
+
+let number = 101;
+let is_over_hundred = number > 100;
+print_statement(is_over_hundred)
+
+}
+
+fn print_statement(statement: bool) {
+    match statement {
+        true => println!("It is over 100"),
+        false => println!("It is under 100")
+    }
+}
